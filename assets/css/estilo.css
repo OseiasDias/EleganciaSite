@@ -1,0 +1,373 @@
+@charset "UTF-8";
+
+:root {
+    --color-white: #fff;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+    background-color: #fff !important;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #39ced6;
+    border-radius: 2em;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-white);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #39ced6 !important;
+}
+
+/*NAVBAR*/
+
+.navbar .nav-link {
+    color: var(--color-white) !important;
+}
+
+.navbar .navbar-brand {
+    font-size: 2em !important;
+    color: var(--color-white) !important;
+    font-weight: 700;
+}
+
+/*TEXTO*/
+
+.text-h1 h1 {
+    font-size: 6em;
+    font-weight: bold;
+}
+
+.text-h1 h1+p {
+    font-size: 1.2em;
+    margin-bottom: 7%;
+    margin-top: 15px;
+}
+
+
+
+/*=======================|VIDEO|===========================*/
+
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+
+.video-wrap::after {
+    content: '';
+    opacity: 0.75;
+    background: #4096ee;
+    background: linear-gradient(to bottom, #4096ee 0%, #39ced6 100%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -100;
+}
+
+
+/*INTRODUCAO*/
+
+.introducao {
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+/* ABOUT*/
+
+.mais1 {
+    background-color: rgba(0, 0, 0, 0.475);
+    padding: 25px 0;
+    border-radius: .5em;
+
+}
+
+.mais1 i+h3 {
+    font-weight: 700;
+}
+
+.mais1:hover {
+    background-color: var(--color-white);
+    color: #000000;
+}
+
+.about-Inicio .prMais>h2 {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+[alt="mulher-no-barco"] {
+    border-radius: .6em;
+    max-height: 96%;
+}
+
+/*Seccao 3*/
+
+
+.service-box {
+    background-color: #ffffff47;
+    padding: 40px 20px;
+    border-radius: .5em;
+    margin-bottom: 10px;
+
+
+}
+
+.service-box:hover {
+    background-color: #fff !important;
+    color: #000000 !important;
+    transition: all .3s linear;
+}
+
+/*SKILLS*/
+
+.skills {
+    height: 700px;
+}
+
+.progre {
+    width: 65%;
+    background-color: #ffffff60;
+
+    border-radius: .5em;
+    height: 5px;
+    position: relative;
+    margin-top: 10px;
+
+}
+
+.progre .color {
+    background-color: #fff !important;
+    width: 60%;
+    height: 5px;
+    border-radius: .5em;
+}
+
+.percentagem {
+    padding: 15px;
+    background-color: #fff;
+    color: #000000;
+    border-radius: 50%;
+    top: -15px;
+    right: -10px;
+    position: relative;
+    font-size: 1.1;
+    font-weight: 600;
+}
+
+.pro {
+    margin: 50px 0;
+
+}
+
+/*WORKS*/
+.works h2{
+    font-weight: 600;
+    margin: 20px 0 30px 0;
+    font-size: 2.3em;
+}
+.figura{
+    background-color:#000000;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 1em;
+    overflow-y: hidden;
+}
+
+.figura img{
+    width: 100%;
+    border-radius: 1em;
+}
+
+.figura figcaption{
+   /* top:365px;*/
+ 
+    position: absolute;
+    background-color: #ddddddbb;
+    width: 100%;
+    height: 20%;
+    top:400px;
+    
+    transition: all .6s ease;
+ 
+}
+.figura:hover figcaption{
+    height: 100% !important;
+    top: 0 !important;
+    border-radius: 1em;
+    position: absolute !important;
+    background-color: #ffffffcf !important;
+    color: #000000 !important;
+    padding: 20px;
+}
+.figura:hover figcaption h4{
+    margin-top: 18%;
+}
+
+.figura figcaption h4{
+    margin:20px;
+    font-weight: 700;
+}
+
+/*TESTATATIONAL*/
+.testational h2{
+    font-size: 2.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.animate{
+    background-color: #ffffff3a;
+    padding: 50px !important;
+    margin: 20px;
+    border-radius: .5em;
+}
+.animate img{
+    margin: 20px auto !important;
+    width: 150px !important;
+    height: 150px !important;
+    display: block;
+}
+
+/*CONTACTO*/
+
+.contacto address p{
+    width: 100%;
+    background-color: #ffffff43;
+    padding: 10px;
+    border-radius: .5em;
+    color: #fff;
+    text-align: start !important;
+}
+
+.contacto form input,textarea{
+    width: 100%;
+    height: 40px;
+    margin: 15px 0;
+    border-radius: .5em;
+    outline: none;
+    border: none;
+    padding-left: 15px;
+    background-color: transparent;
+    border: .5px solid var(--color-white);
+    color: #fff !important;
+}
+
+.contacto form [name]{
+    color: #fff !important;
+    
+}
+.contacto form textarea{
+    min-height: 150px;
+}
+
+.contacto form [id="btnSubmit"]{
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #000000 !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all .4s ease-in;
+}
+
+.contacto form [id="btnSubmit"]:hover{
+    background-color: transparent;
+    color: #fff !important;
+}
+
+.contacto h2{
+    font-size: 2em;
+    font-weight: 700;
+   
+}
+
+
+
+/*MEDIA QUERY's*/
+
+@media (max-width:768px) {
+
+    .text-h1 h1 {
+        font-size: 4.3em;
+
+    }
+
+    .text-h1 h1+p {
+        font-size: 1em !important;
+    }
+
+    .text-h1 h4 {
+        font-size: 1em !important;
+    }
+
+    .navbar .nav-link {
+        font-size: .9em !important;
+        color: #000000 !important;
+        text-align: center !important;
+    }
+
+    .navbar {
+        background-color: var(--color-white) !important;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1001;
+    }
+
+    .navbar .navbar-brand {
+        color: #000000 !important;
+    }
+
+    .navbar .navbar-toggler-icon {
+        color: #000000 !important;
+        font-size: 20px;
+    }
+
+    section{
+        padding-top: 10% !important;
+    }
+
+}
+
+@media (min-width:767px) {
+
+    .navbar .nav-link {
+        font-size: .9em !important;
+
+
+    }
+
+    .navbar .nav-link:hover {
+        transition: all .3s ease-in-out;
+        padding-bottom: 0;
+        border-bottom: 2px solid var(--color-white);
+    }
+
+    .ocultar {
+        display: none !important;
+    }
+}
+
+@media (max-width:400px) {
+    .text-h1 h1 {
+        font-size: 3em;
+
+    }
+}
+
+
+@media (min-width:800px){
+    .works h2{
+        font-weight: 600;
+        margin: 0 0 10px 0;
+        font-size: 2.3em;
+    }
+}
